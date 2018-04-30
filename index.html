@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>PC버전 사이트</title>
-  <script>
-    //window.location="./m"
-    //a=navigator.userAgent;  - 이 구문을 이용해 조건판단에 쓸 수 있다.
-    var myuri="http://yoonkp.github.io"
-    if(document.referrer.substring(0,myuri.length)!=myuri){
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var myuri="http://yoonkp.github.io"
+if(document.referrer.substring(0,myuri.length)!=myuri){
     var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia', 'Opera mini', 'Webos', 'Mot', 'Opera Mobi', 'ieMobile', 'LG');
     for (var word in mobileKeyWords){
         if (navigator.userAgent.match(mobileKeyWords[word]) != null){
             location.href = "/m";
             break;
         }
-    }else{
-      
     }
 }
-  </script>
+</script>
+
 </head>
 <body>
-  <h1>PC 버전 사이트</h1>
+	<h1>PC 버전 사이트</h1>
+	<script>
+	</script>
+</body>
+</html>
   <script>
 //    var $a=navigator.userAgent;
 //    document.write($a);
   </script>
-</body>
-</html>
