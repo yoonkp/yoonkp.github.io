@@ -17,11 +17,15 @@
     });
     var marker = new naver.maps.Marker({
     position: posObj,
-    map: obj
+    map: obj,
+    icon: {
+      url: '//yoonkp.github.io/naverMap/bucks.png',
+      size: new naver.maps.Size(50, 52),
+    }
     });
   }
   window.addEventListener('load',function(){
-    mapInit(37.3595704, 127.105399);
+    mapInit(37.497921, 127.028648);
   });
 //  window.onload=function(){}  // 처음에 로드될 때만 한 번 실행되므로 addEventListener로 사용하는게 좋다.
 </script>
