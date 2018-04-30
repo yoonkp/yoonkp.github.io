@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>NaverMap</title>
+  <style>
+    #map{width: 600px;height: 400px;}
+  </style>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=FvAqXnsYo2xuqm_aTpCp"></script>
+<!--  &submodules=geocoder : 위도, 경도 -->
+<script>
+  function init(){
+    new naver.maps.Map(document.getElementById('map'),{
+      center: new naver.maps.LatLng(37.3595704, 127.105399),
+      zoon:15
+    });    
+  }
+  window.addEventListener('load',function(){
+    
+  });
+//  window.onload=function(){}  // 처음에 로드될 때만 한 번 실행되므로 addEventListener로 사용하는게 좋다.
+</script>
+</head>
+<body>
+  <div id="map"></div>
+</body>
+</html>
