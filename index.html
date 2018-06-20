@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script>
-		var myuri="http://yoonkp.github.io"
-if(document.referrer.substring(0,myuri.length)!=myuri){
-    var mobileKeyWords = new Array('iPhone', 'iPod', 'iPad', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson', 'Nokia', 'Opera mini', 'Webos', 'Mot', 'Opera Mobi', 'ieMobile', 'LG');
-    for (var word in mobileKeyWords){
-        if (navigator.userAgent.match(mobileKeyWords[word]) != null){
-            location.href = "/m";
-            break;
-        }
-    }
-}
-</script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>랜딩페이지 목업</title>
+  <link rel="stylesheet" href="assets/fullpage/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="assets/jquery.min.js"></script>
+  <script src="js/min.js"></script>
+  <script src="assets/fullpage/jquery.fullpage.min.js"></script>
 </head>
 <body>
-	<h1>PC 버전 사이트</h1>
-	<script>
-	</script>
+  <div class="sidemenu">
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PROFILE</a></li>
+        <li><a href="#">CAREER</a></li>
+        <li><a href="#">PROJECT</a></li>
+        <li><a href="#">CONTACTS</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap">
+    <header>
+      <h1 class="logo"><a href="#" class="ir">YoonLab</a></h1>
+      <a href="#" id="btnHamburger">
+        <span class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </span>
+      </a>
+      <a href="#" class="side_close">닫기</a>
+    </header>
+    <div class="container">
+      <div id="full">
+        <section class="section" id="home">
+          <h1>HOME</h1>
+        </section>
+        <section class="section even" id="profile">
+          <h1>PROFILE</h1>
+        </section>
+        <section class="section" id="career">
+          <h1>CAREER</h1>
+        </section>
+        <section class="section even" id="project">
+          <h1>PROJECT</h1>
+        </section>
+        <section class="section" id="contacts">
+          <h1>CONTACTS</h1>
+        </section>
+      </div>
+    </div>
+    <footer>
+      
+    </footer>
+  </div>
 </body>
 </html>
-  <script>
-//    var $a=navigator.userAgent;
-//    document.write($a);
-  </script>
