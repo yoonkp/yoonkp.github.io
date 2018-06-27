@@ -3,28 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>랜딩페이지 목업</title>
+  <meta property="og:title" content="YoonLab portfolio">
+  <meta property="og:description" content="프론트엔드 개발자 박윤경의 포트폴리오 입니다.">
+  <meta property="og:image" content="./img/bg_04.png">
+  <title>YoonLab portfolio</title>
   <link rel="stylesheet" href="assets/fullpage/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="assets/jquery.min.js"></script>
   <script src="js/min.js"></script>
+  <script src="assets/fullpage/scrolloverflow.min.js"></script>
   <script src="assets/fullpage/jquery.fullpage.min.js"></script>
 </head>
 <body>
   <div class="sidemenu">
-    <nav>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PROFILE</a></li>
-        <li><a href="#">CAREER</a></li>
-        <li><a href="#">PROJECT</a></li>
-        <li><a href="#">CONTACTS</a></li>
+    <nav class="nav">
+      <ul class="list_wrap">
+        <li class="list"><a href="#firstPage" class="list_tit">HOME</a></li>
+        <li class="list"><a href="#secondPage" class="list_tit">PROFILE</a></li>
+        <li class="list"><a href="#thirdPage" class="list_tit">CAREER</a></li>
+        <li class="list"><a href="#fourthPage" class="list_tit">PROJECT</a></li>
+        <li class="list"><a href="#lastPage" class="list_tit">CONTACTS</a></li>
       </ul>
     </nav>
   </div>
   <div class="wrap">
     <header>
-      <h1 class="logo"><a href="#" class="ir">YoonLab</a></h1>
+      <h1 class="logo"><a href="#firstPage" class="ir" title="프론트엔드 개발자 박윤경의 포트폴리오 입니다.">YoonLab</a></h1>
       <a href="#" id="btnHamburger">
         <span class="bars">
           <span class="bar"></span>
@@ -37,10 +42,125 @@
     <div class="container">
       <div id="full">
         <section class="section" id="home">
-          <h1>HOME</h1>
+          <div class="in-ct">
+            <div class="home_cnt">
+              <div class="home_tit"><a href="#" class="ir">Welcome!&nbsp;YoonLab</a></div>
+              <div class="home_name">
+                <p class="name"><a href="#" class="ir">Yoonkyoung Park</a><i class="name_bar"></i></p>
+              </div>
+              <p class="home_scroll">
+                <a href="#secondPage">
+                  <i class="scroll_ico"></i>
+                  <span class="scroll_tit">Scroll</span>
+                </a>
+              </p>
+            </div>
+          </div>
         </section>
-        <section class="section even" id="profile">
-          <h1>PROFILE</h1>
+        <section class="section even fp-auto-height" id="profile">
+          <div class="in-ct">
+            <h2 class="ir sub_tit">profile</h2>
+            <div class="prof_wrap clearfix">
+              <div class="fll prof_cnt">
+                <div class="prof_top">
+                  <div class="name_area">
+                    <p class="name_info"><span class="name_txt">Yoonkyoung</span><span class="name_txt">&nbsp;Park</span></p>
+                  </div>
+                  <p class="thumb">
+                    <img class="my_photo" src="imgs/my_01.jpg" alt="박윤경사진 입니다.">
+                  </p>
+                </div>
+                <div class="prof_btm">
+                  <dl class="prof_info clearfix">
+                    <dt class="detail detail_tit">Name</dt>
+                    <dd class="detail detail_txt">박윤경</dd>
+                    <dt class="detail detail_tit">Email</dt>
+                    <dd class="detail detail_txt">pyk0233@naver.com</dd>
+                    <dt class="detail detail_tit">Phone</dt>
+                    <dd class="detail detail_txt">+82-10-4466-0233</dd>
+                    <dt class="detail detail_tit">Birthday</dt>
+                    <dd class="detail detail_txt">1988.10.21</dd>
+                    <dt class="detail detail_tit">Address</dt>
+                    <dd class="detail detail_txt">서울시 광진구 구의동</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="flr">
+                <div class="top">
+                  <p class="info_tit">SKILL</p>
+                  <ul class="skill_cnt clearfix">
+                    <li>
+                      <p class="subject">HTML5</p>
+                      <p class="per">90%</p>
+                      <div class="bar_now"></div>
+                      <div class="bar_100"></div>
+                    </li>
+                    <li>
+                      <p class="subject">CSS3</p>
+                      <p class="per">90%</p>
+                      <div class="bar_now"></div>
+                      <div class="bar_100"></div>
+                    </li>
+                    <li>
+                      <p class="subject">Java script</p>
+                      <p class="per">70%</p>
+                      <div class="bar_now"></div>
+                      <div class="bar_100"></div>
+                    </li>
+                    <li>
+                      <p class="subject">jQuery</p>
+                      <p class="per">80%</p>
+                      <div class="bar_now"></div>
+                      <div class="bar_100"></div>
+                    </li>
+                    <li>
+                      <p class="subject">Photoshop</p>
+                      <p class="per">70%</p>
+                      <div class="bar_now"></div>
+                      <div class="bar_100"></div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="btm">
+                  <p class="info_tit">HOBBY</p>
+                  <ul class="hobby clearfix">
+                    <li>
+                      <img src="imgs/hobby_01.png" alt="음악감상">
+                      <span>#음악감상</span>
+                    </li>
+                    <li>
+                      <img src="imgs/hobby_02.png" alt="우쿨렐레">
+                      <span>#우쿨렐레</span>
+                    </li>
+                    <li>
+                      <img src="imgs/hobby_03.png" alt="피아노">
+                      <span>#피아노</span>
+                    </li>
+                    <li>
+                      <img src="imgs/hobby_04.png" alt="강아지">
+                      <span>#강아지</span>
+                    </li>
+                    <li>
+                      <img src="imgs/hobby_05.png" alt="영화">
+                      <span>#영화</span>
+                    </li>
+                    <li>
+                      <img src="imgs/hobby_06.png" alt="게임">
+                      <span>#게임</span>
+                    </li>
+                    <li>
+                      <img src="imgs/hobby_07.png" alt="여행">
+                      <span>#여행</span>
+                    </li>
+                    <li>
+                      <img src="imgs/hobby_08.png" alt="사진">
+                      <span>#사진</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="section" id="career">
           <h1>CAREER</h1>
