@@ -1,6 +1,8 @@
 jQuery(function($){
   $('#full').fullpage({
-    navigation:true
+    navigation:true,
+    anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+    scrollOverflow:true
   });
   $h=$('#btnHamburger');
   $h.on('click',function(e){
@@ -24,5 +26,16 @@ jQuery(function($){
       $h.removeClass('on')
     });
     $('.side_close').removeClass('on');
-  })
+  });
+  
+//  var H = [0];
+//  var idx = $(this).index();
+//  $('.logo').on('click',function(){
+//    $('.wrap').clearQueue().animate({'scrollTop' : H[0]}, 600);
+//  });
+//
+//  $('.scroll_ico').on('click',function(){
+//    $('.wrap').clearQueue().animate({'scrollTop' : H[1]}, 600);
+//  });
+//  
 });
