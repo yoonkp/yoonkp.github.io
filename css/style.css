@@ -9,13 +9,14 @@ em,i{font-style: normal}
 /*common*/
 .ir{display: block;text-indent: -9999px}
 .full-ct{}
-.in-ct{margin: 0 auto;width: 1440px}
+.in-ct{margin: 0 auto;padding: 0 80px;width: 1200px}
 .clearfix:after{content: "";display: block;clear: both}
 .ellipsis{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .fll{float: left;}
 .flr{float: right;}
 .hide_tit{position: absolute;left: -9999px;}
 .sub_tit{margin: 100px auto 0;width: 330px;height: 66px;background-repeat: no-repeat}
+.info_tit{margin: 60px auto 0;width: 230px;height: 32px;background-repeat: no-repeat;text-indent: -9999px}
 ::selection{color: #fff;background-color: #d3c022}
 
 /*layout*/
@@ -48,7 +49,7 @@ header{position: absolute;width: 100%;height: 62px;}
 
 /* Container */
 .section.even{background-color: #241739;}
-/*home*/
+/* home */
 #home_section{background-image: url(../imgs/home_bg.jpg);background-repeat: no-repeat}
 .home_cnt{}
 .home_tit{position: absolute; top: 28%;left: 0;width: 100%;}
@@ -94,28 +95,35 @@ header{position: absolute;width: 100%;height: 62px;}
 .hobby_list.line2 {margin-top: 40px;}
 
 
-/*career*/
+.tit_wrap{position: relative;}
+.tit_wrap:after{content: "";position: absolute;bottom: 60px;left: 0;width: 100%;height: 1px;background-color: #575757;}
+
+
+/* career */
 #career_section{background-image: url(../imgs/bg_02.png);background-repeat: no-repeat}
-#career_section .sub_tit{background-image: url(../imgs/sub_tit_02.png);}
-#career_section .info_tit{margin: 40px auto 0;width: 230px;height: 32px;background-image: url(../imgs/info_tit_02.png);background-repeat: no-repeat;text-indent: -9999px;}
-
-
-.border {position: relative;}
-.border:after {content: ""; position: absolute; top: 10px; bottom: 20px; left: 50%; width: 1px; transform: translateX(-50%); background-color: #575757;}
-.border .icon {position: relative; margin: 50px 0;}
-.border .icon:before {content: ""; position: absolute; z-index: 1; top: 5px; left: 50%; width: 14px; height: 14px; background-color: #dbd00f; transform: translateX(-50%) rotate(-45deg);}
-.border .icon .date {float: left;width: 50%;font-size: 20px; font-weight: 300; text-align: right; line-height: 1.1;}
-.border .icon .date .date_txt {padding-right: 50px;}
-.border .icon .text_wrap {float: right;width: 50%;letter-spacing: -1px; line-height: 1.8;}
-.text_area {padding-left: 50px;}
+#career_section .sub_tit{background-image: url(../imgs/sub_tit_02.png)}
+#career_section .info_tit{background-image: url(../imgs/info_tit_02.png)}
+.career_wrap {position: relative;margin-bottom: 120px;}
+.career_wrap:after {content: ""; position: absolute; top: 10px; bottom: 20px; left: 50%; width: 1px; transform: translateX(-50%); background-color: #575757;}
+.career_wrap .icon {position: relative; margin: 50px 0;}
+.career_wrap .icon:before {content: ""; position: absolute; z-index: 1; top: 5px; left: 50%; width: 14px; height: 14px; background-color: #dbd00f; transform: translateX(-50%) rotate(-45deg);}
+.career_wrap .date {float: left;width: 50%;font-size: 20px; font-weight: 300; text-align: right; line-height: 1.1;}
+.career_wrap .date_txt {padding-right: 50px;}
+.career_wrap .text_wrap {float: right;width: 50%;letter-spacing: -1px; line-height: 1.8;}
+.career_wrap .text_area {padding-left: 50px;}
 .career_info {display: block;font-size: 18px;}
-/*.border .icon .text_area span:nth-child(1) {padding-bottom: 15px; font-size: 1.25em; font-weight: 100;line-height: 1;}*/
-.career_info .bold {font-size: 22px; font-weight: normal;}
-.border .icon .text_area .desc {display: block;padding-left: 16px; color: #bbb; font-size: 15px; line-height: 1.5;}
-.border .icon .text_area .desc_txt {padding-left: 12px;}
-.border .icon .text_area .line_br {margin-bottom: 20px;}
+.career_info .bold {font-size: 22px; font-weight: normal;line-height: 0;}
+.career_wrap .text_area .desc {display: block;color: #bbb; font-size: 15px; line-height: 1.5;}
+.career_wrap .text_area .desc_txt {padding-left: 12px}
+.career_wrap .text_area .line_br {margin-bottom: 20px}
 
-/*contacts*/
+
+/* project */
+#project_section{}
+#project_section .sub_tit{width: 368px;background-image: url(../imgs/sub_tit_03.png)}
+
+
+/* contacts */
 #contacts_section{background-image: url(../imgs/bg_03.png);background-repeat: no-repeat}
 
 
