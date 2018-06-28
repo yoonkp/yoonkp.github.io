@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta property="og:title" content="YoonLab portfolio">
   <meta property="og:description" content="프론트엔드 개발자 박윤경의 포트폴리오 입니다.">
-  <meta property="og:image" content="./img/bg_04.png">
+  <meta property="og:image" content="imgs/home_bg.png">
   <title>YoonLab portfolio</title>
   <link rel="stylesheet" href="assets/fullpage/jquery.fullpage.min.css">
   <link rel="stylesheet" href="css/font.css">
@@ -19,17 +19,17 @@
   <div class="sidemenu">
     <nav class="nav">
       <ul class="list_wrap">
-        <li class="list"><a href="#firstPage" class="list_tit">HOME</a></li>
-        <li class="list"><a href="#secondPage" class="list_tit">PROFILE</a></li>
-        <li class="list"><a href="#thirdPage" class="list_tit">CAREER</a></li>
-        <li class="list"><a href="#fourthPage" class="list_tit">PROJECT</a></li>
-        <li class="list"><a href="#lastPage" class="list_tit">CONTACTS</a></li>
+        <li class="list"><a href="#main" class="list_tit">HOME</a></li>
+        <li class="list"><a href="#profile" class="list_tit">PROFILE</a></li>
+        <li class="list"><a href="#career" class="list_tit">CAREER</a></li>
+        <li class="list"><a href="#project" class="list_tit">PROJECT</a></li>
+        <li class="list"><a href="#contacts" class="list_tit">CONTACTS</a></li>
       </ul>
     </nav>
   </div>
   <div class="wrap">
     <header>
-      <h1 class="logo"><a href="#firstPage" class="ir" title="프론트엔드 개발자 박윤경의 포트폴리오 입니다.">YoonLab</a></h1>
+      <h1 class="logo"><a href="#main" class="ir" title="프론트엔드 개발자 박윤경의 포트폴리오 입니다.">YoonLab</a></h1>
       <a href="#" id="btnHamburger">
         <span class="bars">
           <span class="bar"></span>
@@ -41,7 +41,7 @@
     </header>
     <div class="container">
       <div id="full">
-        <section class="section" id="home">
+        <section class="section" data-anchor="main" id="home_section">
           <div class="in-ct">
             <div class="home_cnt">
               <div class="home_tit"><a href="#" class="ir">Welcome!&nbsp;YoonLab</a></div>
@@ -49,7 +49,7 @@
                 <p class="name"><a href="#" class="ir">Yoonkyoung Park</a><i class="name_bar"></i></p>
               </div>
               <p class="home_scroll">
-                <a href="#secondPage">
+                <a href="#profile">
                   <i class="scroll_ico"></i>
                   <span class="scroll_tit">Scroll</span>
                 </a>
@@ -57,7 +57,7 @@
             </div>
           </div>
         </section>
-        <section class="section even fp-auto-height" id="profile">
+        <section class="section even fp-auto-height" data-anchor="profile" id="profile_section">
           <div class="in-ct">
             <h2 class="ir sub_tit">profile</h2>
             <div class="prof_wrap clearfix">
@@ -85,35 +85,35 @@
                   </dl>
                 </div>
               </div>
-              <div class="flr">
-                <div class="top">
+              <div class="flr skill_hb">
+                <div class="skill_area">
                   <p class="info_tit">SKILL</p>
                   <ul class="skill_cnt clearfix">
-                    <li>
+                    <li class="skill_list first_list" data-percent="90%">
                       <p class="subject">HTML5</p>
                       <p class="per">90%</p>
                       <div class="bar_now"></div>
                       <div class="bar_100"></div>
                     </li>
-                    <li>
+                    <li class="skill_list" data-percent="85%">
                       <p class="subject">CSS3</p>
-                      <p class="per">90%</p>
+                      <p class="per">85%</p>
                       <div class="bar_now"></div>
                       <div class="bar_100"></div>
                     </li>
-                    <li>
-                      <p class="subject">Java script</p>
-                      <p class="per">70%</p>
-                      <div class="bar_now"></div>
-                      <div class="bar_100"></div>
-                    </li>
-                    <li>
+                    <li class="skill_list" data-percent="75%">
                       <p class="subject">jQuery</p>
-                      <p class="per">80%</p>
+                      <p class="per">75%</p>
                       <div class="bar_now"></div>
                       <div class="bar_100"></div>
                     </li>
-                    <li>
+                    <li class="skill_list" data-percent="50%">
+                      <p class="subject">Java script</p>
+                      <p class="per">50%</p>
+                      <div class="bar_now"></div>
+                      <div class="bar_100"></div>
+                    </li>
+                    <li class="skill_list" data-percent="70%">
                       <p class="subject">Photoshop</p>
                       <p class="per">70%</p>
                       <div class="bar_now"></div>
@@ -121,40 +121,40 @@
                     </li>
                   </ul>
                 </div>
-                <div class="btm">
+                <div class="hobby_area">
                   <p class="info_tit">HOBBY</p>
                   <ul class="hobby clearfix">
-                    <li>
-                      <img src="imgs/hobby_01.png" alt="음악감상">
-                      <span>#음악감상</span>
+                    <li class="hobby_list">
+                      <img class="hobby_ico" src="imgs/hobby_01.png" alt="음악감상">
+                      <span class="hobby_txt">#음악감상</span>
                     </li>
-                    <li>
-                      <img src="imgs/hobby_02.png" alt="우쿨렐레">
-                      <span>#우쿨렐레</span>
+                    <li class="hobby_list">
+                      <img class="hobby_ico" src="imgs/hobby_02.png" alt="우쿨렐레">
+                      <span class="hobby_txt">#우쿨렐레</span>
                     </li>
-                    <li>
-                      <img src="imgs/hobby_03.png" alt="피아노">
-                      <span>#피아노</span>
+                    <li class="hobby_list">
+                      <img class="hobby_ico" src="imgs/hobby_03.png" alt="피아노">
+                      <span class="hobby_txt">#피아노</span>
                     </li>
-                    <li>
-                      <img src="imgs/hobby_04.png" alt="강아지">
-                      <span>#강아지</span>
+                    <li class="hobby_list">
+                      <img class="hobby_ico" src="imgs/hobby_04.png" alt="강아지">
+                      <span class="hobby_txt">#강아지</span>
                     </li>
-                    <li>
-                      <img src="imgs/hobby_05.png" alt="영화">
-                      <span>#영화</span>
+                    <li class="hobby_list line2">
+                      <img class="hobby_ico" src="imgs/hobby_05.png" alt="영화">
+                      <span class="hobby_txt">#영화</span>
                     </li>
-                    <li>
-                      <img src="imgs/hobby_06.png" alt="게임">
-                      <span>#게임</span>
+                    <li class="hobby_list line2">
+                      <img class="hobby_ico" src="imgs/hobby_06.png" alt="게임">
+                      <span class="hobby_txt">#게임</span>
                     </li>
-                    <li>
-                      <img src="imgs/hobby_07.png" alt="여행">
-                      <span>#여행</span>
+                    <li class="hobby_list line2">
+                      <img class="hobby_ico" src="imgs/hobby_07.png" alt="여행">
+                      <span class="hobby_txt">#여행</span>
                     </li>
-                    <li>
-                      <img src="imgs/hobby_08.png" alt="사진">
-                      <span>#사진</span>
+                    <li class="hobby_list line2">
+                      <img class="hobby_ico" src="imgs/hobby_08.png" alt="사진">
+                      <span class="hobby_txt">#사진</span>
                     </li>
                   </ul>
                 </div>
@@ -162,13 +162,76 @@
             </div>
           </div>
         </section>
-        <section class="section" id="career">
-          <h1>CAREER</h1>
+        <section class="section" data-anchor="career" id="career_section">
+          <div class="in-ct">
+            <h2 class="ir sub_tit">career</h2>
+            <p class="info_tit">EXPERIENCES</p>
+            <div class="border">
+              <div class="icon clearfix">
+                <p class="date"><span class="date_txt">2017 . 11 - 2018 . 04</span></p>
+                <div class="text_wrap">
+                  <p class="text_area">
+                    <span class="career_info"><b class="bold">그린컴퓨터아트학원</b></span>
+                    <span class="career_info">웹퍼블리셔 프론트엔드 과정 수료</span>
+                  </p>
+                </div>
+              </div>
+              <div class="icon clearfix">
+                <p class="date"><span class="date_txt">2015 . 03 -  2016 . 03</span></p>
+                <div class="text_wrap">
+                  <p class="text_area">
+                    <span class="career_info"><b class="bold">주)엠크라스</b> 기획영업팀 대리</span>
+                    <span class="career_info">앙코르앱 음악 다운로드 개발 프로젝트</span>
+                    <em class="desc">역할<i class="desc_txt">음악 다운로드에 대한 상세 기획</i></em>
+                    <em class="desc line_br">성과<i class="desc_txt">구글 앱스토어 순위 47위에서 20위로 진입</i></em>
+                    <span class="career_info">모바일 오디오 광고 MAAP 개발 프로젝트</span>
+                    <em class="desc line_br">역할<i class="desc_txt">개발 기획 및 제휴사 영업</i></em>
+                    <span class="career_info">mp3 플레이어앱 리플레이어 개발 프로젝트</span>
+                    <em class="desc">역할<i class="desc_txt">리플레이어 메인 기획자 (전체 기획의 80% 담당)</i></em>
+                  </p>
+                </div>
+              </div>
+              <div class="icon clearfix">
+                <p class="date"><span class="date_txt">2013 . 12 -  2014 . 11</span></p>
+                <div class="text_wrap">
+                  <p class="text_area">
+                    <span class="career_info"><b class="bold">WMI엔터테인먼트</b> 공연기획 사원</span>
+                    <span class="career_info">연주회 조연출</span>
+                    <em class="desc">공연일<i class="desc_txt">2014. 06. 21</i></em>
+                    <em class="desc">공연명<i class="desc_txt">IN THE WORLD MUSIC (세계음악속으로)</i></em>
+                    <em class="desc line_br space">역<i class="desc_txt"></i>할<i class="desc_txt">공연기획 및 진행</i></em>
+                    <span class="career_info">홍보 동영상 제작</span>
+                    <em class="desc">내용<i class="desc_txt">임원들과 회원들이 함께한 하와이 우쿨렐레 마스터클래스 홍보영상</i></em>
+                    <em class="desc">성과<i class="desc_txt">홍보영상을 배포하여 회원유치</i></em>
+                  </p>
+                </div>
+              </div>
+              <div class="icon clearfix">
+                <p class="date"><span class="date_txt">2010 . 03 -  2014 . 02</span></p>
+                <div class="text_wrap">
+                  <p class="text_area">
+                    <span class="career_info"><b class="bold">국립군산대학교 음악과</b> (작곡)</span>
+                    <em class="desc">복수전공<i class="desc_txt">경영</i></em>
+                    <em class="desc space">학<i class="desc_txt"></i><i class="desc_txt"></i>점<i class="desc_txt">3.81 / 4.5</i></em>
+                    <em class="desc">졸업논문<i class="desc_txt">국내의 연예 매니지먼트 산업에 관한 연구</i></em>
+                  </p>
+                </div>
+              </div>
+              <div class="icon clearfix">
+                <p class="date"><span class="date_txt">2003 . 03 -  2007 . 02</span></p>
+                <div class="text_wrap">
+                  <p class="text_area">
+                    <span class="career_info"><b class="bold">논산여자고등학교</b> (문과)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="section even" id="project">
+        <section class="section even" data-anchor="project" id="project_section">
           <h1>PROJECT</h1>
         </section>
-        <section class="section" id="contacts">
+        <section class="section" data-anchor="contacts" id="contacts_section">
           <h1>CONTACTS</h1>
         </section>
       </div>
