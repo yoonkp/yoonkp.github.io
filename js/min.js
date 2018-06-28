@@ -1,9 +1,14 @@
 jQuery(function($){
   $('#full').fullpage({
     navigation:true,
-    anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-    scrollOverflow:true
+    anchors:['main', 'profile', 'career', 'project', 'contacts'],
+    scrollOverflow:true,
+    scrollOverflowReset:true,
+    resetSliders:true,
+    recordHistory:false,
   });
+  
+//  push side bar
   $h=$('#btnHamburger');
   $h.on('click',function(e){
     e.preventDefault();
@@ -27,15 +32,22 @@ jQuery(function($){
     });
     $('.side_close').removeClass('on');
   });
+  $('.container').on('click',function(e){
+    e.preventDefault();
+    $('.wrap').animate({left:0},function(){
+      $h.removeClass('on')
+    });
+    $('.side_close').removeClass('on');
+  })
+
   
-//  var H = [0];
-//  var idx = $(this).index();
-//  $('.logo').on('click',function(){
-//    $('.wrap').clearQueue().animate({'scrollTop' : H[0]}, 600);
-//  });
-//
-//  $('.scroll_ico').on('click',function(){
-//    $('.wrap').clearQueue().animate({'scrollTop' : H[1]}, 600);
-//  });
-//  
+$(document).ready(function(){
+  $('.skill_list').each(function(){
+    $(this).find('.bar_now').animate({
+      width:$(this).attr('data-percent')
+    },1000);
+  });
+});
+  
+  
 });
