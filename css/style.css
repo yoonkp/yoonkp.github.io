@@ -17,6 +17,8 @@ em,i{font-style: normal}
 .hide_tit{position: absolute;left: -9999px;}
 .sub_tit{margin: 100px auto 0;width: 330px;height: 66px;background-repeat: no-repeat}
 .info_tit{margin: 60px auto 0;width: 230px;height: 32px;background-repeat: no-repeat;text-indent: -9999px}
+.tit_wrap{position: relative;}
+.tit_wrap:after{content: "";position: absolute;bottom: 60px;left: 0;width: 100%;height: 1px;background-color: #575757;}
 ::selection{color: #fff;background-color: #d3c022}
 
 /*layout*/
@@ -95,8 +97,7 @@ header{position: absolute;width: 100%;height: 62px;}
 .hobby_list.line2 {margin-top: 40px;}
 
 
-.tit_wrap{position: relative;}
-.tit_wrap:after{content: "";position: absolute;bottom: 60px;left: 0;width: 100%;height: 1px;background-color: #575757;}
+
 
 
 /* career */
@@ -105,15 +106,18 @@ header{position: absolute;width: 100%;height: 62px;}
 #career_section .info_tit{background-image: url(../imgs/info_tit_02.png)}
 .career_wrap {position: relative;margin-bottom: 120px;}
 .career_wrap:after {content: ""; position: absolute; top: 10px; bottom: 20px; left: 50%; width: 1px; transform: translateX(-50%); background-color: #575757;}
-.career_wrap .icon {position: relative; margin: 50px 0;}
-.career_wrap .icon:before {content: ""; position: absolute; z-index: 1; top: 5px; left: 50%; width: 14px; height: 14px; background-color: #dbd00f; transform: translateX(-50%) rotate(-45deg);}
-.career_wrap .date {float: left;width: 50%;font-size: 20px; font-weight: 300; text-align: right; line-height: 1.1;}
-.career_wrap .date_txt {padding-right: 50px;}
-.career_wrap .text_wrap {float: right;width: 50%;letter-spacing: -1px; line-height: 1.8;}
-.career_wrap .text_area {padding-left: 50px;}
+.career_wrap .icon {position: relative; margin: 80px 0;}
+.career_wrap .icon:before {content: ""; position: absolute; z-index: 1; top: 5px; left: 50%; width: 14px; height: 14px; background-color: #dbd00f; transform: translateX(-50%) rotate(-45deg)}
+.career_wrap .text_wrap {width: 50%;letter-spacing: -1px; line-height: 1.8;text-align: left}
+.career_wrap .text_wrap.fll .text_inner {padding-right: 50px}
+.career_wrap .text_wrap.flr .text_inner {padding-left: 50px}
+.career_wrap .date {padding-top: 10px;color: #78cef1;font-size: 42px;font-weight: 300}
+
 .career_info {display: block;font-size: 18px;}
-.career_info .bold {font-size: 22px; font-weight: normal;line-height: 0;}
-.career_wrap .text_area .desc {display: block;color: #bbb; font-size: 15px; line-height: 1.5;}
+.career_info.tit {text-align: right;}
+.career_info .bold {font-size: 28px; font-weight: normal;line-height: 0;}
+.career_wrap .text_area{padding-top: 8px;}
+.career_wrap .text_area .desc {display: block;color: #bbb; font-size: 15px;}
 .career_wrap .text_area .desc_txt {padding-left: 12px}
 .career_wrap .text_area .line_br {margin-bottom: 20px}
 
@@ -121,10 +125,16 @@ header{position: absolute;width: 100%;height: 62px;}
 /* project */
 #project_section{}
 #project_section .sub_tit{width: 368px;background-image: url(../imgs/sub_tit_03.png)}
+#project_section .info_tit{width: 610px;height: 30px;background-image: url(../imgs/info_tit_03.png)}
 
 
 /* contacts */
 #contacts_section{background-image: url(../imgs/bg_03.png);background-repeat: no-repeat}
+#contacts_section .tit_wrap:after{left: 25%;bottom: -20px;width: 50%;background-color: #888;}
+#contacts_section .sub_tit{margin-top: 0;width: 450px;background-image: url(../imgs/sub_tit_04.png)}
+#contacts_section .info_tit{width: 340px;height: 62px;background-image: url(../imgs/info_tit_04.png)}
+.cont_area{padding-top: 50px;text-align: center;}
+.cont_area .mail{color: #dbd00f;font-size: 2.25em;font-weight: 100;}
 
 
 #fp-nav ul li{margin: 6px;}
