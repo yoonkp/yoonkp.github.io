@@ -33,12 +33,11 @@ jQuery(function($){
     $('.side_close').removeClass('on');
   });
   $('.container').on('click',function(e){
-    e.preventDefault();
     $('.wrap').animate({left:0},function(){
       $h.removeClass('on')
     });
     $('.side_close').removeClass('on');
-  })
+  });
 
   
 $(document).ready(function(){
