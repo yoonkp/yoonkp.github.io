@@ -126,6 +126,34 @@ header{position: absolute;width: 100%;height: 62px;}
 #project_section{}
 #project_section .sub_tit{width: 368px;background-image: url(../imgs/sub_tit_03.png)}
 #project_section .info_tit{width: 610px;height: 30px;background-image: url(../imgs/info_tit_03.png)}
+.proj_wrap{font-weight: 100;}
+.proj{}
+.proj_list{padding-bottom: 50px;border-bottom: 1px solid #575757;}
+.proj_list.list_02{margin-bottom: 100px;}
+.proj_int{padding-top: 80px;text-align: center;}
+.proj_int .tit{font-size: 28px}
+.proj_int .ex{padding-top: 16px;font-size: 24px;}
+/* 내용시작부분 */
+.proj_info_wrap{padding-top: 70px;}
+.proj_info_wrap .thumb{width: 50%;text-align: center;}
+.proj_info_wrap .thumb .img{}
+
+.proj_info_wrap .info{padding-top: 32px;width: 50%;}
+.proj_info_wrap .text_wrap{}
+.proj_text{font-size: 20px;}
+.proj_text .tit{float: left;width: 20%;padding-top: 8px;font-weight: 700;}
+.proj_text .ex{float: left;padding-top: 8px;}
+.proj_text .tit.first{padding-top: 0}
+.proj_text .ex.first{padding-top: 0}
+.proj_text .ex .color{padding-right: 20px;}
+.proj_text .ex .color_block{display: inline-block;margin-left: 6px;width: 18px;height: 18px}
+.proj_text .ex .color_01{background-color: #2faeff;}
+.proj_text .ex .color_02{background-color: #222;}
+.proj_text .ex .color_03{background-color: #fff;}
+.site_wrap{margin-left: 50px;width: 50%;text-align: center;}
+.proj_info_wrap .go_site{margin-top: 60px;width: 100%;background-color: #3f2864;border: 1px solid #3f2864;color: #fff;font-size: 20px;font-weight: 400;line-height: 2;transition: 0.6s;}
+.proj_info_wrap .go_site:hover{padding: 0;background-color: #fff;color: #3f2864;}
+
 
 
 /* contacts */
