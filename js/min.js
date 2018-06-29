@@ -40,7 +40,16 @@ jQuery(function($){
   });
 
   
-$(document).ready(function(){
+//$(document).ready(function(){
+//  $('.skill_list').each(function(){
+//    $(this).find('.bar_now').animate({
+//      width:$(this).attr('data-percent')
+//    },1000);
+//  });
+//});
+  
+  
+$("#fp-nav li:eq(1) a").click(function(){
   $('.skill_list').each(function(){
     $(this).find('.bar_now').animate({
       width:$(this).attr('data-percent')
