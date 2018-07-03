@@ -32,7 +32,8 @@ footer{}
 .sidemenu .nav{}
 .sidemenu .nav .list_wrap{margin-top: 50px;text-align: center;}
 .sidemenu .list_tit{display: block;padding: 1em;color: #241739;font-size: 24px;}
-.side_close{display: none;position: fixed;top: 0;left: 320px;z-index: 999;width: 60px;height: 60px;background-color: #ddd;line-height: 60px;font-size: 20px;font-weight: bold;}
+.side_close{display: none;position: fixed;top: 0;left: 320px;z-index: 999;width: 50px;height: 50px;background-color: #bbb;}
+.side_close .ir{margin: 8px;width: 30px;height: 30px;background-image: url(../imgs/close_01.png)}
 .side_close.on{display: block;}
 
 
@@ -130,9 +131,12 @@ header{position: absolute;width: 100%;height: 62px;}
 .proj{}
 .proj_list{padding-bottom: 50px;border-bottom: 1px solid #575757;}
 .proj_list.list_02{margin-bottom: 100px;}
-.proj_int{padding-top: 80px;text-align: center;}
-.proj_int .tit{font-size: 28px}
+.proj_int{position: relative;padding-top: 70px;text-align: center;}
+.proj_int .tit{color: #d3c022;font-size: 28px;font-weight: 700}
 .proj_int .ex{padding-top: 16px;font-size: 24px;}
+.quote{position: absolute;width: 22px;height: 18px;background-image: url(../imgs/quote_02.png);background-repeat: no-repeat}
+.quote.q1{top: 56px;left: 30%;background-image: url(../imgs/quote_02.png)}
+.quote.q2{bottom: -10px;right: 31%;background-image: url(../imgs/quote_03.png)}
 /* 내용시작부분 */
 .proj_info_wrap{padding-top: 70px;}
 .proj_info_wrap .thumb{width: 50%;text-align: center;}
@@ -141,10 +145,11 @@ header{position: absolute;width: 100%;height: 62px;}
 .proj_info_wrap .info{padding-top: 32px;width: 50%;}
 .proj_info_wrap .text_wrap{}
 .proj_text{font-size: 20px;}
-.proj_text .tit{float: left;width: 20%;padding-top: 8px;font-weight: 700;}
+.proj_text .tit{float: left;width: 32%;padding-top: 8px;_color: #78cef1;font-weight: 700;}
 .proj_text .ex{float: left;padding-top: 8px;}
 .proj_text .tit.first{padding-top: 0}
 .proj_text .ex.first{padding-top: 0}
+.proj_text .ex .font{padding-right: 20px;}
 .proj_text .ex .color{padding-right: 20px;}
 .proj_text .ex .color_block{display: inline-block;margin-left: 6px;width: 18px;height: 18px}
 .proj_text .ex .color_01{background-color: #2faeff;}
