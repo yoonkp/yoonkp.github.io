@@ -5,7 +5,18 @@ jQuery(function($){
     scrollOverflow:true,
     scrollOverflowReset:true,
     resetSliders:true,
-    recordHistory:false,
+    
+	afterLoad: function(origin){
+		var loadedSection = this;
+		//앵커링크 사용
+		if(origin == 'profile'){
+			$('.skill_list').each(function(){
+			$(this).find('.bar_now').animate({
+				width:$(this).attr('data-percent')
+			},1000);
+			});
+		}
+	}
   });
   
 //  push side bar
@@ -49,13 +60,13 @@ jQuery(function($){
 //});
   
   
-$("#fp-nav li:eq(1) a").click(function(){
-  $('.skill_list').each(function(){
-    $(this).find('.bar_now').animate({
-      width:$(this).attr('data-percent')
-    },1000);
-  });
-});
-  
+//$("#fp-nav li:eq(1) a").click(function(){
+//  $('.skill_list').each(function(){
+//    $(this).find('.bar_now').animate({
+//      width:$(this).attr('data-percent')
+//    },1000);
+//  });
+//});
+    
   
 });
